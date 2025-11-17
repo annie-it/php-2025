@@ -9,9 +9,12 @@
     echo"<h2>Ejercicio 1</h2>";
 
     $array = [1, 2, 3, 4, 5];
-
-    print_r($array); 
-    ?>
+    
+ // Number one bay one
+    foreach ($array as $numero) {
+        echo $numero. "<br>" ;
+       }
+          ?>
 
 </body>
 </html>
