@@ -7,8 +7,7 @@
 </head>
 <body> 
     <?php 
-
-    echo "<h2>Ejercicio 3</h2><br>";
+    echo"<h2>Ejercicio 3</h2>";
 
     function AllsContent($lista, $texto) {
 
@@ -26,6 +25,6 @@
     var_dump(AllsContent($lista,"wonderfullsola")); //true
     var_dump(AllsContent($lista,"sola")); //false
     
-    ?>
+?>
 </body>
 </html>
