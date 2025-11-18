@@ -17,13 +17,13 @@
         "email"=> "annie@example.com",
         "favorite_food" => "Apple"
         ];
+
         echo "My personal information:<br>";
 
-        foreach ($myInfo as $key =>$value){
+        Foreach ($myInfo as $key =>$value){
             echo ucfirst($key). ": $value<br>";
         }
-
-    ?>  
+           ?>  
 </body>
 </html>
    
