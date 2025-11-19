@@ -7,21 +7,31 @@
 </head>
 <body>
     <?php 
-    echo"<h2>Ejercicio 1</h2>";
+        echo"<h2>Ejercicio 1</h2>";
+    class Employer {
+        private $name;
+        private $salary;   
 
-    class Employer  {
-        public $name;
-        public $lastName;
-        public $salary;   
+        public function __construct($name, $salary) {
+            $this->name = $name;
+            $this->salary = $salary;
+            }
+        public function payTaxes() {
+            echo "Employer: ". $this->name ."<br>";
 
-        function __construct($name) {
-        $this->name = $name;
+        if ($this->salary > 6000) {
+            echo "Employer yes: Pay Taxes. <br>";
+        } else {
+            echo "Employer not: pay Taxes. <br>";
+            }
         }
-        function get_name() {
-        return $this->name;
-        }
-    
     }
+        $employerA = new Employer( "Miriam","6600");
+        $employerA->payTaxes();
+
+        $employerB = new Employer( "Sam","4800");
+        $employerB->payTaxes();
+    
     ?>
 
 
