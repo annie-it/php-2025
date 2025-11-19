@@ -19,8 +19,12 @@
         public function payTaxes() {
             echo "Employer: ". $this->name ."<br>";
 
-        if ($this->salary > 6000) {
+        if ($this->salary > 6001) {
             echo "Employer yes: Pay Taxes. <br>";
+        }
+        else if ($this->salary = 6000) {
+            echo "Employer yes: Pay Taxes. <br>";
+
         } else {
             echo "Employer not: pay Taxes. <br>";
             }
@@ -31,9 +35,10 @@
 
         $employerB = new Employer( "Sam","4800");
         $employerB->payTaxes();
-    
+
+        $employerC = new Employer( "Ana","6000");
+        $employerC->payTaxes();
     ?>
-
-
+    
 </body>
 </html>
