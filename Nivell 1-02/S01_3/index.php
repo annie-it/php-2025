@@ -74,7 +74,7 @@
     echo "Result of subtraction: ". calculate(11,6, "subtract"). "<br>";
     echo "Result of multiplication: ". calculate(11,6, "multiplication"). "<br>";
     echo "Result of division: ". calculate(11,6, "division"). "<br>";
-    echo "Result of invalid operation: ". calculate(11,6, "power"). "<br>";   
+    echo "Result of invalid operation: ". calculate(11,0, "division"). "<br>";   
     ?>
 
 </body>
